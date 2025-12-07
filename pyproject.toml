@@ -1,0 +1,19 @@
+[project]
+name = "waybar-amdfan"
+version = "0.1.0"
+description = "waybar amdfan monitor"
+authors = [
+    {name = "mcgillij",email = "mcgillivray.jason@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "amdfan (>=0.2.5,<0.3.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
