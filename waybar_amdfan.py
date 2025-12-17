@@ -6,9 +6,14 @@ Waybar custom module to display AMDGPU fan speed and temperature.
 
 import json
 import time
+import sys
 from amdfan.controller import Scanner
 
-CARD = "card1"
+if len(sys.argv) > 1:
+    CARD = sys.argv[1]
+else:
+    CARD = "card1"
+
 FORMAT = "{card}: 🌬️{fan_speed} / {gpu_temp}℃🌡️"
 INTERVAL = 5  # seconds
 
